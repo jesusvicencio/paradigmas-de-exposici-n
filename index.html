@@ -3,83 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paradigmas de la Exposición | Edición Ultra</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<title>Paradigmas de la Exposición - Jesús Vicencio</title>
 <style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:'Inter',Arial,sans-serif;background:#f6f3ee;color:#12172a;overflow-x:hidden}
-header{position:relative;background:radial-gradient(1200px 600px at 20% 10%,#7c5cff55,transparent),radial-gradient(1000px 500px at 90% 90%,#ff6ac255,transparent),linear-gradient(135deg,#0f1128,#2d246d);color:white;padding:90px 20px 80px;text-align:center;overflow:hidden}
-header::before{content:"";position:absolute;inset:-50%;background:radial-gradient(#fff2 1px,transparent 1.5px);background-size:28px 28px;opacity:.25;animation:move 20s linear infinite}
-@keyframes move{to{transform:translate(50px,50px)}}
-.tag{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(10px);padding:8px 18px;border-radius:100px;font-size:12px;letter-spacing:2px;font-weight:700}
-h1{font-family:'Space Grotesk';font-size:clamp(42px,8vw,84px);line-height:.9;margin:22px auto;max-width:900px}
-h1 span{background:linear-gradient(90deg,#c7b7ff,#ff8dc6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-header p{max-width:700px;margin:18px auto 0;color:#d9d6ff;font-size:19px;line-height:1.6}
-nav{position:sticky;top:0;z-index:99;background:rgba(255,255,255,.8);backdrop-filter:blur(18px);border-bottom:1px solid #e8e0d8}
-nav .nav{max-width:1200px;margin:auto;display:flex;gap:8px;justify-content:center;padding:12px;flex-wrap:wrap}
-nav a{text-decoration:none;font-weight:700;color:#2a2e45;padding:10px 18px;border-radius:100px;background:white;border:1px solid #ece6df;transition:.2s}
-nav a:hover{transform:translateY(-2px);background:#111;color:white}
-main{max-width:1180px;margin:auto;padding:60px 18px}
-.kicker{color:#6c5bff;font-weight:900;letter-spacing:3px;font-size:12px}
-h2{font-family:'Space Grotesk';font-size:clamp(32px,5vw,54px);margin:10px 0;line-height:1}
-.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;margin-top:28px}
-@media(max-width:900px){.grid{grid-template-columns:1fr}}
-.card{background:white;border-radius:26px;padding:30px;border:1px solid #eae3da;box-shadow:0 18px 50px #2a23400f;transition:.3s;position:relative;overflow:hidden}
-.card:hover{transform:translateY(-6px);box-shadow:0 25px 70px #2a23401a}
-.card::after{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#7c5cff,#ff6ac2)}
-.card h3{font-family:'Space Grotesk';font-size:24px;margin:0 0 10px}
-.card p,.card li{color:#5c6475;line-height:1.7}
-.hero-box{background:#12162e;color:white;border-radius:26px;padding:32px;position:relative;overflow:hidden}
-.hero-box::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 200px at 80% 0%,#7c5cff44,transparent)}
-.badge{display:inline-block;background:#7c5cff;color:white;padding:6px 12px;border-radius:100px;font-size:11px;font-weight:900;letter-spacing:1px;margin-bottom:10px}
-.qr-section{text-align:center;background:linear-gradient(180deg,#fff,#f3efff);border:2px dashed #c9b8ff;border-radius:30px;padding:40px 20px;margin-top:60px}
-.btn{display:inline-block;background:#11172e;color:white;padding:14px 26px;border-radius:100px;text-decoration:none;font-weight:700;margin-top:16px;transition:.2s}
-.btn:hover{background:#6c5bff;transform:scale(1.05)}
-footer{background:#0d1020;color:#8b90a8;text-align:center;padding:40px;margin-top:70px}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f4ee;color:#1c2335;line-height:1.7}
+header{background:linear-gradient(135deg,#181b33,#463cb0);color:white;padding:75px 20px 60px;text-align:center}
+header h1{font-size:clamp(34px,6vw,62px);margin:0 auto;max-width:850px;line-height:1.1}
+header h1 span{color:#d8ceff}
+header p{max-width:680px;margin:18px auto 0;color:#e0ddff;font-size:18px}
+nav{position:sticky;top:0;background:white;border-bottom:1px solid #ddd;z-index:10}
+.nav{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:10px}
+.nav a{text-decoration:none;color:#2f3548;font-weight:bold;background:#f2f2f2;padding:8px 16px;border-radius:20px;font-size:14px}
+main{max-width:1000px;margin:auto;padding:45px 18px}
+section{margin-bottom:55px}
+.kicker{color:#5e4bd7;font-weight:900;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+h2{font-size:32px;margin:6px 0 12px;line-height:1.2}
+.box{background:white;border:1px solid #e5ddd2;border-radius:20px;padding:28px;box-shadow:0 10px 30px #0000000a;margin-top:15px}
+.box p{color:#4a5568}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+@media(max-width:800px){.grid2{grid-template-columns:1fr}}
+.item{background:white;border-radius:18px;padding:22px;border:1px solid #e8ddd0}
+.item h3{margin:0 0 8px;color:#4337a8}
+.item p{margin:0;color:#5a6476;font-size:15px}
+.lista li{margin-bottom:8px}
+footer{background:#11142a;color:#9aa0b3;text-align:center;padding:30px 15px;font-size:14px;margin-top:40px}
 </style>
 </head>
 <body>
 <header>
-<div class="tag">✦ PROYECTO ULTRA MEJORADO 2026</div>
 <h1>Paradigmas de la <span>Exposición</span></h1>
-<p>No solo es presentar. Es hacer que tu idea se quede en la mente de todos.</p>
+<p>Proyecto escolar realizado por Jesús Vicencio - Investigación sobre cómo organizamos y presentamos la información</p>
 </header>
-<nav><div class="nav"><a href="#que">Concepto</a><a href="#tipos">4 Paradigmas</a><a href="#pro">Modo PRO</a><a href="#qr">Mi QR</a></div></nav>
+<nav><div class="nav">
+<a href="#intro">Introducción</a><a href="#que">¿Qué es?</a><a href="#tipos">Tipos</a><a href="#importancia">Importancia</a><a href="#conclusion">Conclusión</a>
+</div></nav>
 <main>
+
+<section id="intro">
+<div class="kicker">Introducción</div>
+<h2>Introducción</h2>
+<div class="box">
+<p>En este proyecto investigué qué son los paradigmas de la exposición. Elegí este tema porque muchas veces tenemos la información pero no sabemos cómo explicarla bien frente al grupo. Aquí explico los modelos más usados y cómo los podemos aplicar en la escuela, en museos y en la vida diaria.</p>
+<p><strong>Objetivo:</strong> Entender y explicar de forma clara los diferentes paradigmas para mejorar nuestras exposiciones en clase.</p>
+</div>
+</section>
+
 <section id="que">
-<div class="kicker">01 / Definición</div>
-<h2>La forma en que expones cambia lo que la gente entiende.</h2>
-<div class="grid">
-<div class="hero-box"><div class="badge">IDEA CLAVE</div><h3 style="font-family:Space Grotesk;font-size:28px;margin:0 0 12px">El contenido es 20%. La exposición es 80%.</h3><p style="color:#c8cce0;line-height:1.7">Puedes tener la mejor investigación del mundo, pero si la expones mal, nadie la entiende. Un paradigma es el molde que le da forma a tu mensaje.</p></div>
-<div class="card"><h3>¿Para qué sirve?</h3><p>• Para no aburrir<br>• Para que te recuerden<br>• Para convencer sin rogar<br>• Para verte como experto aunque seas estudiante</p></div>
+<div class="kicker">Definición</div>
+<h2>¿Qué es un paradigma de exposición?</h2>
+<div class="box">
+<p>Un paradigma de exposición es un modelo o forma de organizar la información para presentarla. No solo es lo que dices, sino cómo lo acomodas para que la gente te entienda y te ponga atención.</p>
+<p>Por ejemplo, no es lo mismo explicar un tema leyendo un texto largo que contándolo como una historia o mostrando una comparación con imágenes. Cada forma es un paradigma diferente.</p>
 </div>
 </section>
-<section id="tipos" style="margin-top:80px">
-<div class="kicker">02 / Los 4 que importan</div>
-<h2>Elige tu arma.</h2>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px">
-<div class="card"><h3>📚 Informativo</h3><p>Datos, orden, claridad. Sin adornos. Perfecto para ciencia y tareas.</p><ul><li>Estructura: Intro > Datos > Conclusión</li><li>Error común: mucho texto</li></ul></div>
-<div class="card"><h3>🔥 Persuasivo</h3><p>Vende, convence, mueve. Usa emoción + lógica.</p><ul><li>Estructura: Problema > Solución > Beneficio</li><li>Ej: Apple, TED Talks</li></ul></div>
-<div class="card"><h3>🎬 Narrativo</h3><p>Cuenta una historia. La gente olvida datos, pero no olvida historias.</p><ul><li>Estructura: Héroe > Conflicto > Transformación</li><li>Ej: Museos, Storytelling</li></ul></div>
-<div class="card"><h3>⚖️ Comparativo</h3><p>Pones dos opciones frente a frente y haces que la tuya gane.</p><ul><li>Estructura: Opción A vs B > Ventajas</li><li>Ej: Reviews, tablas</li></ul></div>
-</div>
-</section>
-<section id="pro" style="margin-top:80px">
-<div class="kicker">03 / Nivel Dios</div>
-<h2>Cómo exponer como un pro</h2>
-<div class="grid">
-<div class="card"><h3>Regla 1-7-7</h3><p>1 idea por diapositiva, 7 palabras máximo por línea, 7 segundos para entenderla. Si necesitas leer tu diapositiva, fallaste.</p></div>
-<div class="card"><h3>Regla del QR</h3><p>Siempre termina con un QR a tu página. Te ves 1000% más profesional y tu profe te ama.</p></div>
-</div>
-</section>
-<section id="qr" class="qr-section">
-<div class="kicker">Tu acceso directo</div>
-<h2>Escanea y boom, a tu página.</h2>
-<p>Este QR lleva a tu proyecto. Ponlo en tu cartel, presentación y entrega final.</p>
-<p style="font-weight:700">https://jesusvicencio.github.io/paradigmas-de-exposici-n/</p>
-<a class="btn" href="https://jesusvicencio.github.io/paradigmas-de-exposici-n/" target="_blank">Ver mi página →</a>
-</section>
-</main>
-<footer>Hecho por Jesús Vicencio — Versión Ultra Mejorada 2026 — Paradigmas de la Exposición</footer>
-</body>
-</html>
+
+<section id="tipos">
+<div class="kicker">Desarrollo</div>
+<h2>Tipos de paradigmas</h2>
+<div class="grid2">
+<div class="item"><h3>1. Paradigma Informativo</h3><p>Busca informar de manera objetiva y clara. Se usan datos, fechas y definiciones. Es el que más usamos en tareas. Ejemplo: exponer sobre la Revolución Mexicana.</p></div>
+<div class="item"><h3>2. Paradigma Persuasivo</h3><p>Su meta es convencer a las personas. Usa argumentos y ejemplos. Ejemplo: cuando quieres convencer al grupo de que tu propuesta es la mejor.</p></div>
+<div class="item"><h3>3. Paradigma Narrativo</h3><p>Cuenta una historia con inicio, desarrollo y final. Hace que la exposición sea más interesante y fácil de recordar. Ejemplo: cómo cuentan la historia en un museo.</p></div>
+<div class="item"><h3>4. Paradigma Comparativo</h3><p>Compara dos o más cosas para ver diferencias y similitudes. Usa tablas y gráficos. Ejemplo: comparar dos modelos
